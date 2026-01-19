@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Llibreta de Contactes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Llibreta de Contactes</h1>
+
+    <div style="margin-bottom: 20px; text-align: right">
+      <a href="afegir.html" class="btn btn-success">+ Afegir Contacte Nou</a>
+    </div>
+    <div class="search-container" style="margin-bottom: 20px">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="🔍 Cerca contactes per nom..."
+        style="
+          width: 100%;
+          padding: 10px;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+        "
+      />
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Email</th>
+          <th>Telèfon</th>
+          <th>Accions</th>
+        </tr>
+      </thead>
+      <tbody id="contact-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
